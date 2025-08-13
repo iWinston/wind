@@ -1,0 +1,24 @@
+# Shadowrocket 订阅示例
+# 保存为 shadowrocket-config.yaml 后上传即可
+
+# -------------------------------------------------
+# 1. 节点列表
+# -------------------------------------------------
+proxies:
+  # 前置 SS（香港）
+  - name: "🇭🇰 标准 | 香港 01"
+    type: ss
+    server: 4dqaqmlb.sched.sma-1.1.ssndlls.xin
+    port: 20001
+    cipher: aes-128-gcm
+    password: 6f1f534e-a293-4f4d-922f-dc6dad453dc8
+    udp: true
+
+  # 后置 Socks5（只允许海外 IP）
+  - name: "点这里"
+    type: socks5
+    server: 154.220.106.60
+    port: 17203
+    username: R8MHqwByGQn
+    password: ANpzFEGuNf
+    udp: true
