@@ -1,6 +1,6 @@
 proxies:
   # 1. 前置 SS 节点（香港 01）
-  - name: "🇭🇰 标准 | 香港 01"
+  - name: "不要点"
     type: ss
     server: 4dqaqmlb.sched.sma-1.1.ssndlls.xin
     port: 20001
@@ -9,7 +9,7 @@ proxies:
     udp: true
 
   # 2. 后置 Socks5 节点（只允许海外 IP）
-  - name: "SocksBack"
+  - name: "点这里"
     type: socks5
     server: 154.220.106.60
     port: 17203
