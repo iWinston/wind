@@ -1,5 +1,6 @@
 proxies:
-  - name: "hidden-hk-01"   # 不暴露给用户
+  # 1. 前置 SS 节点（香港 01）
+  - name: "🇭🇰 标准 | 香港 01"
     type: ss
     server: 4dqaqmlb.sched.sma-1.1.ssndlls.xin
     port: 20001
@@ -7,18 +8,12 @@ proxies:
     password: 6f1f534e-a293-4f4d-922f-dc6dad453dc8
     udp: true
 
-  - name: "SocksBack"
+  # 2. 后置 Socks5 节点（只允许海外 IP）
+  - name: "点这里"
     type: socks5
     server: 154.220.106.60
     port: 17203
     username: R8MHqwByGQn
     password: ANpzFEGuNf
     udp: true
-    dialer-proxy: "hidden-hk-01"   # 内部调用
-
-proxy-groups:
-  - name: "🚀 链式代理"
-    type: select
-    proxies:
-      - "SocksBack"
-      - "DIRECT"
+    dialer-proxy: "🇭🇰 标准 | 香港 01"   # 关键：让 Socks5 先走 SS 节点
