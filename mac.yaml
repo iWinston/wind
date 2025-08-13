@@ -41,3 +41,12 @@ proxy-groups:
       - "🔗 链式代理"
       - "🇭🇰 标准 | 香港 01"
       - "DIRECT"
+
+# -------------------------------------------------
+# 3. 规则（可按需增删）
+# -------------------------------------------------
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 最终出口
+  - DOMAIN-SUFFIX,netflix.com,🚀 最终出口
+  - GEOIP,CN,DIRECT
+  - MATCH,🚀 最终出口
