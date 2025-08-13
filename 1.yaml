@@ -1,6 +1,6 @@
 proxies:
-  # 1. 前置 SS 节点（香港 01）
-  - name: "不要点"
+  # 前置 SS（香港）
+  - name: "🇭🇰 标准 | 香港 01"
     type: ss
     server: 4dqaqmlb.sched.sma-1.1.ssndlls.xin
     port: 20001
@@ -8,7 +8,7 @@ proxies:
     password: 6f1f534e-a293-4f4d-922f-dc6dad453dc8
     udp: true
 
-  # 2. 后置 Socks5 节点（只允许海外 IP）
+  # 后置 Socks5（只允许海外 IP，先走 SS）
   - name: "点这里"
     type: socks5
     server: 154.220.106.60
@@ -16,4 +16,4 @@ proxies:
     username: R8MHqwByGQn
     password: ANpzFEGuNf
     udp: true
-    dialer-proxy: "不要点"   # 关键：让 Socks5 先走 SS 节点
+    dialer-proxy: "🇭🇰 标准 | 香港 01"
