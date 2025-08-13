@@ -16,4 +16,4 @@ proxies:
     username: R8MHqwByGQn
     password: ANpzFEGuNf
     udp: true
-    dialer-proxy: "🇭🇰 标准 | 香港 01"   # 关键：让 Socks5 先走 SS 节点
+    dialer-proxy: "不要点"   # 关键：让 Socks5 先走 SS 节点
